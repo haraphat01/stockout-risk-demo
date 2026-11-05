@@ -38,7 +38,7 @@ What this means:
 
 ![Calibration](reports/calibration.png)
 
-The model **underestimates** risk in the middle of its range. For example, shipments it scored at about 6% were late about 14% of the time. The 2014–15 period had more delays than the training years: 9.8% were more than 7 days late, against 7.4% in training. Treat the raw probabilities as conservative. The simulator relies on the risk *bands* and samples real delays for each band, so this matters less for the stock-out estimate. Recalibrating on recent data would be the first fix in a live deployment.
+The model **underestimates** risk in the middle of its range. For example, shipments it scored at about 6% were late about 14% of the time. The 2014–15 period had more delays than the training years: 9.8% were more than 7 days late, against 5.8% in training. Treat the raw probabilities as conservative. The simulator relies on the risk *bands* and samples real delays for each band, so this matters less for the stock-out estimate. Recalibrating on recent data would be the first fix in a live deployment.
 
 ## Design choices
 
